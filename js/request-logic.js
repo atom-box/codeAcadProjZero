@@ -1,8 +1,6 @@
-// We at Content Creators know this code is useful for getting the
-// extension off of the supplied filename, but we can't figure out the rest of
-// the function to use it! We hope this is useful to you!
-
-/*      ALL     WORK     IS     WRITTEN   IN     HERE  
+/* 			November 19, 2017 Madison, Wisconsin, USA
+     		CODE BY www.twitter.com/mistergenest
+				STOP BY AND SAY HELLO TO ME  :)    
 */
 
 function getContentType(filename) {
@@ -22,7 +20,6 @@ function getContentType(filename) {
   	case 'jpg':
   		return 'image/jpeg';
   }
-  return 'text/html';
+  return 'text/plain';
 }
 
-// todo Modify SWITCH so the return is 'text/plain' for all other file extensions.

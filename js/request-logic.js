@@ -7,8 +7,10 @@
 
 function getContentType(filename) {
   const extension = filename.match(/.*\.([^\.]*)$/)[1];
-  console.log("Hallo.");
-  console.log(extension);
+  if (!filename){
+		console.log("Uh oh.  No file-extension found.");
+		return;
+  } 
   switch (extension) 
   {
   	case 'html':
@@ -20,4 +22,7 @@ function getContentType(filename) {
   	case 'jpg':
   		return 'image/jpeg';
   }
+  return 'text/html';
 }
+
+// todo Modify SWITCH so the return is 'text/plain' for all other file extensions.
